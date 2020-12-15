@@ -70,3 +70,8 @@ TEST(Balanced, Subexpression_Negative)
     EXPECT_FALSE(isValid("([)]"));
     EXPECT_FALSE(isValid("[{({)}]"));
 }
+
+TEST(Balanced, WithoutBrackets)
+{
+    EXPECT_TRUE(isValid("abc"));
+}
